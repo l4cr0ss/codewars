@@ -8,7 +8,7 @@ struct node
 
 // Do an inorder traversal
 int sumTheTreeValues(struct node* root) {
-	int sum = 0;
+  int sum = 0;
   if (root->left) sum += sumTheTreeValues(root->left);
   sum += root->value;
   if (root->right) sum += sumTheTreeValues(root->right);
